@@ -1,0 +1,41 @@
+\chapter{Measure Theory}
+
+\begin{defi}\index{$\sigma$-field}\index{$\mathfrak A$-measurable}
+A system $\mathfrak A$ if subsets of $\Omega$ is called a \textbf{ $\sigma$-field}, if 
+\begin{enumerate}
+    \item $\Omega\in \mathfrak A$.
+    \item $A\in\mathfrak A\Rightarrow A^c\in\mathfrak A$.
+    \item $(A_i)_{i\in\mathbb N}\in\mathfrak A\Rightarrow \bigcup_{i\in\mathbb N}A_i\in\mathfrak A$.
+\end{enumerate}
+Elements of $\mathfrak A$ are called \textbf{$\mathfrak A$-measurable}.
+\end{defi}
+
+\begin{defi}\index{measure}\index{finite}\index{$\sigma$-finite}
+Let $\mathfrak A$ be a $\sigma$-field. Then $\mu\colon\mathfrak A\to [0,\infty]$ is called a \textbf{measure}, if 
+\begin{enumerate}
+    \item $\mu(\emptyset)=0$.
+    \item For all $(A_n)_{n\in\mathbb N}$ in $\mathfrak A$ disjoint, we have $\mu(\bigcupdot_n A_n)=\sum_n \mu(A_n)$.
+\end{enumerate}
+A measure is called \textbf{finite}, if $\mu(\Omega)<\infty$, and \textbf{$\sigma$-finite}, if there exists $(\Omega_n)\subseteq \mathfrak A$ with $\bigcup_n \Omega_n=\Omega$ s.t. $\mu(\Omega_n)<\infty$ for all $n\in\mathbb N$.
+\end{defi}
+
+\begin{ex}
+\begin{enumerate}
+    \item The \textbf{Lebesgue-measure} $\lambda$ on the Borel-measurable sets $\mathcal B(\mathbb R)$.
+    \item The \textbf{Dirac-measure} $\delta_x(A)$ for $x\in\Omega$, $A\in\mathfrak A$.
+\end{enumerate}
+\end{ex}
+
+\begin{defi}\index{measure space}
+A pair $(\Omega, \mathfrak A)$ is called a \textbf{measurable space}. If we add a measure $\mu$, then the triple $(\Omega, \mathfrak A, \mu)$ is called a \textbf{measure space}.
+\end{defi}
+
+\begin{rem}
+Typically we use $(\Omega, \mathcal F, \mathbb P)$ for a probability space, i.e. $\mathbb P(\Omega)=1$.
+\end{rem}
+
+\subsection{Measurable Functions}
+
+\begin{defi}
+t   
+\end{defi}

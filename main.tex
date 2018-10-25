@@ -1,0 +1,83 @@
+\documentclass[a4paper,12pt,oneside]{book}
+
+%%%----------------------------------------------------------
+
+\usepackage[utf8]{inputenc}
+\usepackage{biblatex}
+\usepackage{imakeidx}
+\usepackage{mdframed}
+\usepackage{MnSymbol}
+\usepackage{hyperref}
+\hypersetup{
+    hyperindex=true,
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+%\usepackage{graphicx}
+%\graphicspath{{images/}}
+\usepackage{amsthm}
+\usepackage{amsmath}
+%\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage[toc,page]{appendix}
+\usepackage{MnSymbol} 
+
+
+%\usepackage{markdown}
+
+%%%----------------------------------------------------------
+
+\RequirePackage{style}	% load associated style file style.sty
+
+%%%----------------------------------------------------------
+
+\makeindex[columns=2, title=Alphabetischer Index, intoc]
+
+%%%----------------------------------------------------------
+
+\addbibresource{bibliography.bib}
+
+%%%----------------------------------------------------------
+
+
+%%%----------------------------------------------------------
+
+\title{Financial Mathematics I}
+\author{}
+\date{}
+
+%%%----------------------------------------------------------
+
+\begin{document}
+
+
+\input{maths_main}
+
+%%%----------------------------------------------------------
+
+\frontmatter
+\maketitle
+\tableofcontents
+
+%%%----------------------------------------------------------
+
+\mainmatter 
+
+%%%----------------------------------------------------------
+
+\include{content}
+
+%%%----------------------------------------------------------
+\begin{appendices}
+\include{appendix}
+\end{appendices}
+\printbibliography
+\printindex
+
+%%%----------------------------------------------------------
+
+\end{document}
+
+
